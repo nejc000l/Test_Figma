@@ -1,0 +1,58 @@
+
+  
+  .rec.rec-carousel-wrapper:focus,
+  .rec.rec-carousel-wrapper .rec-carousel:focus,
+  .rec.rec-carousel-wrapper .rec-slider-container:focus,
+  .rec.rec-carousel-wrapper .rec-slider-container .rec-slider:focus,
+  .rec.rec-carousel-wrapper .rec-slider-container .rec-slider div:focus {
+    outline: none;
+  }
+  
+  .rec.rec-carousel-wrapper .rec-slider-container {
+  }
+  
+  /* Arrow Styles */
+  
+  .rec.rec-carousel-wrapper .rec-carousel button {
+    background: rgba(109, 83, 83, 0);
+    color: #fff;
+
+  }
+ 
+  .rec.rec-carousel-wrapper .rec-pagination .rec.rec-dot.rec {
+    box-shadow: none;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  
+  .rec.rec-carousel-wrapper .rec-pagination .rec.rec-dot.rec.rec-dot_active {
+    background: #111111;
+  }
+  .card{
+      padding-top:30px;
+  }
+
+  .rec.rec-carousel-wrapper{
+    padding:5%;
+  }
+  .imgTablet{
+    display: none;
+    width:100%;
+  
+  }
+  .imgMonitor{
+    width:100%;
+  }
+  @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    .imgMonitor{
+      display: none;
+    }
+    .imgTablet{
+      display: block;
+
+    }
+    
+}

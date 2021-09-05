@@ -1,0 +1,24 @@
+.title{
+    background: rgb(117 105 105 / 9%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-container-title{
+    font-family: 'Gotham-BoldItalic';
+    text-align: center;
+    color: #494949;
+} 
+
+.right-container-ptag{
+    margin:3rem;
+    font-size: 1.4rem;
+    font-style: italic;
+    text-align: center;
+
+}
+.right-container-Btn{
+    position: absolute;
+    left: 10px;
+    top: 10rem;
+}

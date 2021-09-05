@@ -1,0 +1,45 @@
+
+.arrow{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  margin: 10px;
+  position: relative;
+  left: 15%;
+}
+
+.dots{
+  width: 15%;
+  
+  margin: 0 6px 0px 0px;
+
+  
+}
+.logo{
+  width: 35%;
+}
+
+
+.burger{
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+p{
+  margin:0;
+}
+.monitor-title-tablet{
+  display: none;
+}
+@media only screen and (max-width: 768px
+){
+  .monitor-title-desk{
+    display: none;
+  }
+
+  .monitor-title-tablet{
+    display: block;
+  }
+}

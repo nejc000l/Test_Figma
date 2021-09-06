@@ -5,7 +5,6 @@ import './Slider.css'
 const Cards = () => {
     return (
         <Container>
-               <EmptyBox/>
                <CardsContainer>
                    <Card>
                    <p>150-200 Spletna Optika, ki je v celoti
@@ -36,10 +35,7 @@ const Cards = () => {
 }
 const Container = styled.div`
 `
-const EmptyBox = styled.div`
-    height: 20vh;
 
-`
 const CardsContainer = styled.div`
    display: flex;
    flex-direction: row;
@@ -49,17 +45,36 @@ const CardsContainer = styled.div`
    padding-right: 14%;
     padding-left: 14%;
     overflow: hidden;
+    @media(max-width:1024px){
+        flex-direction: column;
+    }
+    
 `
 const Card = styled.div`
     text-align: left;
 
    
     /* height: 0; */
-    font-size: 4rem;
+    font-size: 40px;
     font-family: 'Gotham-Book';
     color:#1C1C1C;
+    font-weight:400;
     display: flex;
     flex-direction: column;
+    @media(max-width:1563px) {
+        
+        font-size: 30px;
+
+    }
+    @media(max-width:1024px){
+        padding: 49px 0;
+        font-size: 40px;    
+}
+    @media(max-width:920px){
+        font-size: 30px;
+    }
+
+
 `
 
 
@@ -67,6 +82,17 @@ const ContainerInside = styled.div`
    display: flex;
    margin-left: 15rem;
    margin-bottom: 10px;
+   margin-right: 275px;
+    @media(max-width:1563px) {
+        
+        margin-right: 100px;
+
+    }
+    @media(max-width:1024px) {
+        
+        margin-left: 0;
+
+    }
 
 `
 

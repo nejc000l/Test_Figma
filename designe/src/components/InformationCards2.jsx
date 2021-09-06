@@ -32,6 +32,11 @@ const Container = styled.div`
     grid-gap: 20px;
     grid-template-rows: minmax(100px,auto);
 
+    @media(max-width:1024px){
+        display:flex;
+        flex-direction: column;
+      
+    }
 `
 
 const Button = styled.button`
@@ -52,6 +57,9 @@ const LeftContainer = styled.div`
     width: 100%;
     font-size: 2rem;
     padding: 0 3rem;
+    @media(max-width:1024px){
+        font-size:2rem;
+    }
 
 `
 
@@ -64,6 +72,10 @@ const RightContainer = styled.div`
    position: relative;
    background: #faf3f3b5;
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   order: 0;
+   @media(max-width:1024px){
+       order:1;
+   }
 
 `
 const Dots = styled.div`
@@ -73,5 +85,7 @@ const Dots = styled.div`
 const Title = styled.h1`
     font-size: 40px;
     font-weight: 700;
+    @media(max-width:1024px){
+    }
 `
 export default InformationCards2

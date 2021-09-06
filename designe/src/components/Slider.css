@@ -15,8 +15,10 @@
   
   margin: 0 6px 0px 0px;
 
+
   
 }
+
 .logo{
   width: 35%;
 }
@@ -29,9 +31,14 @@
 }
 p{
   margin:0;
+ 
 }
+
 .monitor-title-tablet{
   display: none;
+}
+.monitor-title-phone{
+  display:none;
 }
 @media only screen and (max-width: 768px
 ){
@@ -41,5 +48,38 @@ p{
 
   .monitor-title-tablet{
     display: block;
+    height: 100%;
+    width: 100%;
+
   }
+}
+@media only screen 
+  and (min-device-width: 100px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .monitor-title-tablet{
+      display: none;
+    
+  
+    }
+    .monitor-title-desk{
+      display: none;
+    }
+
+    .monitor-title-phone{
+      display:block;
+    }
+    .dots{
+      width:0;
+      margin: 0;
+    
+      
+    }
+    .burger{
+     color: white;
+    }
+    .logo{
+      width:100%;
+    }
 }

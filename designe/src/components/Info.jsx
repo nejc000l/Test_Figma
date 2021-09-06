@@ -50,28 +50,54 @@ const Container = styled.div`
     align-items: center;
     flex-direction: column;
     margin: 2rem 0;
-   
     border-bottom:10px solid rgba(255, 255, 255, 0.119);
     height:70vh;
+    padding-bottom: 10rem;
+    @media(max-width:768px){
+        height:37vh;
+    }
+    
 `
 const Card = styled.div`
    /* R */
 
-width: 611px;
-height: 341px;
-left: 294px;
-top: 1970px;
+width: 100%;
 
 font-family:" Gotham-Book";
 font-style: normal;
 font-weight: normal;
-font-size: 30px;
 line-height: 130%;
 /* or 26px */
 text-align: center;
+font-size: 1.4rem;
+padding: 1px 40rem;
 
 color: #1C1C1C;
+@media(max-width:1600px){
+    font-size: 1.5rem;
+    padding: 1px 20rem;
+    height: 20vh;
 
+    }
+@media(max-width:1024px){
+    font-size: 1rem;
+    padding: 1px 10rem;
+    height: 40vh;
+
+    }
+    @media(max-width:768px){
+    font-size: 13px;
+    
+    
+
+    }
+    @media(max-width:480px){
+        font-size:10px;
+        padding: 3rem;
+        height: 10vh;
+
+
+    }
 
 `
 const Title = styled.div`
@@ -79,6 +105,9 @@ const Title = styled.div`
     color: #86B998;
     font-weight: 700;   
     font-size:30px;
+    @media(max-width:920px){
+        font-size: 20px;
+    }
 
 `
 const Dots = styled.div`

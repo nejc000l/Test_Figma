@@ -17,12 +17,13 @@ function App() {
    <Container>
       <Nav/>
     </Container>
+ 
     <Container>
       <Cards/>
    </Container>
    <SliderContainer>
     <Carousel2/>
-    <Buttons/>
+    {/* <Buttons/> */}
    </SliderContainer>
    <Container>
      <InfoCard/>

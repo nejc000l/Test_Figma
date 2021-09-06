@@ -21,6 +21,18 @@ const Button = styled.button`
     font-size: 20px;
     font-family: "Gotham-Book";
     color: white;
+    @media(min-width:1920px){
+        top: 70%;
+    }
+    @media(max-width:1920px){
+        top: 70%;
+    }
+    @media(max-width:1457px){
+        top: 68%;
+    }
+    @media(max-width:1024px){
+        display: none;
+    }
     
 `
 

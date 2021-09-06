@@ -46,6 +46,10 @@ const Container = styled.div`
     grid-template-columns: 40% 60%;
     grid-gap: 20px;
     grid-template-rows: minmax(100px,auto);
+    @media(max-width:1024px){
+        display:block;
+      
+    }
 
 `
 
@@ -66,6 +70,12 @@ const LeftContainer = styled.div`
     flex-direction: column;
     width: 100%;
     font-size: 2rem;
+    @media(max-width:1024px){
+        margin-bottom: 40px;
+    }
+    @media(max-width:480px){
+        font-size: 20px;
+    }
 
 `
 
@@ -77,15 +87,27 @@ const RightContainer = styled.div`
     width: 100%;
     padding: 4rem 7rem;
    position: relative;
-   background: #faf3f3b5
-
+   background: #faf3f3b5;
+   @media(max-width:1024px){
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    @media(max-width:480px){
+        margin: 0;
+    }
+  
 `
 const Dots = styled.div`
     border:1px dashed #86B998;
     width:30%;
+    @media(max-width:480px){
+        font-size: 16px;
+    }
 `
 const Title = styled.h1`
     font-size: 40px;
     font-weight: 700;
+    @media(max-width:480px){
+       
+    }
 `
 export default InformationCards
